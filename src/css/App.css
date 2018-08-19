@@ -21,19 +21,37 @@
   top: 15px;
 }
 
-.slider-image {
-  width: 100%;
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  z-index: 999;
+  background-color: gray;
+}
+
+.nav-link {
+  margin-left: 15px
 }
 
 .text-align-center {
   text-align: center;
 }
 
-/* img {
-  width: 80%;
-} */
+/* Image Slider */
 
 
+.slider-image {
+  width: 100%;
+}
 
 @keyframes slidy {
 0% { left: 0%; }
