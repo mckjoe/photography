@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Card extends Component {
   constructor() {
@@ -9,6 +10,7 @@ class Card extends Component {
   this.showMenu = this.showMenu.bind(this);
   this.closeMenu = this.closeMenu.bind(this);
   }
+
 
   showMenu(event) {
   event.preventDefault();
@@ -26,6 +28,7 @@ class Card extends Component {
   }
 
   render() {
+  const linkStyling = {textDecoration: "none",}
     return (
       <div className="drop-down">
             <img onClick={this.showMenu} className="mobile-navbar-button" src="https://d9hhrg4mnvzow.cloudfront.net/promo.bizjournals.com/southflorida/leaders/invite/3ec560a8-white-menu-icon.png" alt="Menu Button" />
@@ -33,14 +36,10 @@ class Card extends Component {
         {
           this.state.showMenu
             ? (
-              <div
-                className="menu"
-                ref={(element) => {
-                  this.dropdownMenu = element;
-                }}
-              >
-                <p className="nav-link">Home</p>
-                <p className="nav-link">Galleries</p>
+              <div className="menu" ref={(element) => {this.dropdownMenu = element;}}>
+                <Link className="links" style={linkStyling} to="/"><p className="nav-link">Home</p></Link>
+                <Link className="links" style={linkStyling} to="/galleries"><p className="nav-link">Galleries</p></Link>
+
                 <p className="nav-link">About Me</p>
               </div>
             )

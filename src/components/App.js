@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../css/App.css';
+import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
-import ImageSlider from './ImageSlider';
-import HomepageText from './HomepageText';
+import HomePage from './HomePage';
+import Galleries from './Galleries';
 import Footer from './Footer';
 
 class App extends Component {
@@ -11,8 +12,10 @@ class App extends Component {
       <div className='test'>
         <Header />
         <hr />
-        <ImageSlider />
-        <HomepageText />
+        <switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/galleries' component={Galleries} />
+        </switch>
         <Footer />
       </div>
     );
