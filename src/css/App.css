@@ -104,3 +104,18 @@
 a {
   color: white;
 }
+
+.gallery-thumbs {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-thumbs img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-thumbs p {
+  text-align: center;
+  font-size: 14px;
+}
