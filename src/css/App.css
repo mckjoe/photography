@@ -15,10 +15,13 @@
 }
 
 .mobile-navbar-button {
-  width: 50px;
+  width: 60px;
   position: absolute;
   right: 10px;
   top: 15px;
+}
+.mobile-navbar-button:hover {
+  cursor: crosshair;
 }
 
 .drop-down {
@@ -32,14 +35,16 @@
   flex-direction: column;
   width: 100vw;
   position: absolute;
-  top: 55px;
+  top: 60px;
   right: 0;
   z-index: 999;
-  background-color: gray;
+  background-color: darkgray;
 }
 
 .nav-link {
-  margin-left: 15px
+  margin-left: 30px;
+  width: 100%;
+  padding: 5px 0;
 }
 
 .text-align-center {
@@ -105,9 +110,23 @@ a {
   color: white;
 }
 
+.gallery-options {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .gallery-thumbs {
   display: flex;
   flex-direction: column;
+}
+.gallery-thumbs:first-of-type {
+  margin-top: 15px;
+}
+.gallery-thumbs img:hover {
+  cursor: crosshair;
+}
+.gallery-thumbs p:hover {
+  cursor: crosshair;
 }
 
 .gallery-thumbs img {
@@ -119,3 +138,46 @@ a {
   text-align: center;
   font-size: 14px;
 }
+
+@media screen and (min-width: 500px) {
+  .gallery-options {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Image Fader CSS */
+/* .fader-image {
+  width: 60%;
+}
+.stage {
+  margin: 1em auto;
+  height: 192px;
+}
+
+.stage a {
+  position: absolute;
+  width: 80%;
+}
+.stage a img {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.stage a:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  z-index: 20;
+}
+.stage a:nth-of-type(2) {
+  z-index: 10;
+}
+.stage a:nth-of-type(n+3) {
+  display: none;
+}
+
+@keyframes fader {
+  from { opacity: 1.0; }
+  to   { opacity: 0.0; }
+} */

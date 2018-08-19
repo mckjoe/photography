@@ -7,7 +7,7 @@ import img from './../assets/images/08.JPG';
 
 function Galleries() {
   return(
-    <div>
+    <div className="gallery-options">
       <div className="gallery-thumbs">
         <img src={cloudyDay} />
         <p>Landscapes</p>
