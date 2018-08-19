@@ -5,4 +5,5 @@ body {
   background-color: black;
   min-width: 275px;
   color: white;
+  box-sizing: border-box;
 }

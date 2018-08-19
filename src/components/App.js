@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import '../css/imagefader.css';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import HomePage from './HomePage';
