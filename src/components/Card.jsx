@@ -39,6 +39,7 @@ class Card extends Component {
               <div className="menu" ref={(element) => {this.dropdownMenu = element;}}>
                 <Link className="links" style={linkStyling} to="/"><p className="nav-link">Home</p></Link>
                 <Link className="links" style={linkStyling} to="/galleries"><p className="nav-link">Galleries</p></Link>
+                <Link className="links" style={linkStyling} to="/websites"><p className="nav-link">Websites</p></Link>
 
                 <p className="nav-link">About Me</p>
               </div>
